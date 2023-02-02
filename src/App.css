@@ -30,13 +30,15 @@
   padding: 5px;
   background-color: #111;
   color: #fff;
-  font-size: 35px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  overflow: auto;
+  min-height: 100px;
 }
 .result-holder h1 {
+  display: flex;
   font-weight: 200;
 }
 
@@ -60,9 +62,9 @@
   cursor: pointer;
 }
 .button-holder button:nth-child(17) {
-  width: 164px;
+  width: 157px;
   text-align: left;
-  padding-left: 33px;
+  padding-left: 27px;
 }
 .button-holder button:nth-child(-n + 3) {
   background-color: rgb(137, 137, 137);
@@ -74,4 +76,9 @@
 .button-holder button:nth-child(4n),
 button:last-child {
   background-color: orange;
+}
+.button-holder button:last-child {
+  width: 157px;
+  text-align: right;
+  padding-right: 27px;
 }
