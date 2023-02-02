@@ -1,9 +1,9 @@
 import React from "react";
 
-function ResultHolder() {
+function ResultHolder(props) {
   return (
     <div className="result-holder">
-      <h1>0</h1>
+      <h1>{props.calcValue || "0"}</h1>
     </div>
   );
 }
